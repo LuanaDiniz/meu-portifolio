@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI",
+    Roboto, sans-serif;
+  background-color: #fff3e6; /* Laranja muito claro */
+  color: #5e2b2b; /* Marrom avermelhado para texto */
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.apple-header {
+  background-color: rgba(200, 60, 30, 0.9); /* Vermelho-alaranjado */
+  backdrop-filter: blur(10px);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.apple-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 4px 20px rgba(200, 60, 30, 0.2);
+}
+
+.header-text h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  color: white; /* Texto branco no cabeçalho */
+}
+
+.apple-tagline {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9); /* Branco semi-transparente */
+  font-style: italic;
+}
+
+/* Navegação */
+.apple-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  background-color: rgba(200, 60, 30, 0.7); /* Vermelho-alaranjado */
+  border-radius: 50px;
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 0.8rem 1.5rem;
+}
+
+.apple-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.apple-nav a:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+/* Seções */
+.apple-main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.apple-section {
+  background: #ffd9c2; /* Laranja pastel */
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(200, 60, 30, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.apple-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #c83c1e; /* Vermelho-alaranjado */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Sobre Mim */
+.about-content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.experience-highlight {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 3px solid #c83c1e;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.setinha-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.setinha-list li {
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.setinha-list i {
+  color: #c83c1e;
+  margin-right: 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* Habilidades */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.skill-category {
+  flex: 1;
+  min-width: 250px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.skill-category h3 {
+  color: #c83c1e;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-category li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Projetos */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.apple-project {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.apple-project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(200, 60, 30, 0.2);
+}
+
+.apple-project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.apple-project h3 {
+  padding: 1rem 1rem 0;
+  color: #5e2b2b;
+}
+
+.apple-project p {
+  padding: 0.5rem 1rem 1rem;
+  color: #5e2b2b;
+  opacity: 0.8;
+}
+
+.apple-btn {
+  display: inline-block;
+  margin: 0 1rem 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #c83c1e;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.apple-btn:hover {
+  background-color: #a33219;
+}
+
+/* Aside */
+.apple-aside {
+  background: #ffd9c2;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.aside-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hobbies,
+.social-links {
+  flex: 1;
+  min-width: 250px;
+}
+
+.hobbies h3,
+.social-links h3 {
+  color: #c83c1e;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #5e2b2b;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  color: #c83c1e;
+}
+
+/* Rodapé */
+.apple-footer {
+  background-color: #c83c1e;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-content h3 {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copyright {
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .apple-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .aside-content {
+    flex-direction: column;
+  }
+}

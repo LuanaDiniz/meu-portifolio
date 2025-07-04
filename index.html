@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Estilo Apple</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontes  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;700&display=swap');
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+        }
+    </style>
+    <!-- Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho (header) -->
+    <header class="apple-header">
+        <div class="header-content">
+            <img src="assets/minha-foto.png" alt="Minha Foto" class="apple-avatar">
+            <div class="header-text">
+                <h1>Luana Diniz Fernandes</h1>
+                <p class="apple-tagline">"Transformando ideias em realidade através do código"</p>
+            </div>
+        </div>
+        
+        <nav class="apple-nav">
+            <ul>
+                <li><a href="#sobre"><i class="fas fa-user"></i> Sobre Mim</a></li>
+                <li><a href="#habilidades"><i class="fas fa-code"></i> Habilidades</a></li>
+                <li><a href="#projetos"><i class="fas fa-laptop-code"></i> Projetos</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo principal (main) -->
+    <main class="apple-main">
+        <!-- Seção "Sobre Mim" -->
+        <section id="sobre" class="apple-section">
+    <h2><i class="fas fa-user"></i> Sobre Mim</h2>
+    <div class="about-content">
+        <p class="about-text">
+            Me chamo <strong>Luana Diniz</strong>, tenho 25 anos e moro no Rio de Janeiro. 
+            Atualmente curso <strong>Análise e Desenvolvimento de Sistemas</strong> na Unicesumar, 
+            onde mergulho em linguagens de programação, arquitetura de software e boas práticas 
+            de desenvolvimento.
+        </p>
+        
+        <p class="about-text">
+            <p>Como <strong>estagiária em Back-End no Bradesco Seguros</strong>, trabalho com:</p>
+        </p>
+
+        <div class="experience-highlight">
+            <ul class="setinha-list">
+            <li><i class="fas fa-caret-right"></i> Aplicações legado com ambiente WebSphere</li>
+            <li><i class="fas fa-caret-right"></i> Desenvolvimento de APIs RESTful</li>
+            <li><i class="fas fa-caret-right"></i> Melhorias e criações de funcionalidades</li>
+            <li><i class="fas fa-caret-right"></i> Integrações com bancos de dados</li>
+            <li><i class="fas fa-caret-right"></i> Soluções para otimização de processos</li>
+        </ul>
+        </div>
+        
+        <p class="about-text">
+            Sou apaixonada por resolver problemas complexos e acredito que a tecnologia 
+            deve ser <strong>acessível, eficiente e humana</strong>. Nos meus momentos livres, 
+            adoro estudar novas linguagens e contribuir para projetos open-source.
+        </p>
+    </div>
+</section>
+
+        </section>
+
+        <!-- Seção "Habilidades" -->
+        <section id="habilidades" class="apple-section">
+            <h2><i class="fas fa-code"></i> Habilidades</h2>
+            <div class="skills-grid">
+                        <div class="skill-category">
+            <h3><i class="fas fa-paint-brush" style="color: #000000;"></i> Front-end</h3>
+            <ul class="no-bullets">
+                <li><i class="fab fa-html5" style="color: #E34F26;"></i> HTML5</li>
+                <li><i class="fab fa-css3-alt" style="color: #1572B6;"></i> CSS3</li>
+                <li><i class="fab fa-js" style="color: #F7DF1E;"></i> JavaScript</li>
+            </ul>
+        </div>
+
+        <!-- Quadrado 2: Back-end -->
+        <div class="skill-category">
+            <h3><i class="fas fa-server" style="color: #000000;"></i> Back-end</h3>
+            <ul class="no-bullets">
+                <li><i class="fab fa-java" style="color: #007396;"></i> Java</li>
+                <li><i class="fas fa-leaf" style="color: #6DB33F;"></i> Spring Boot</li>
+                <li><i class="fab fa-python" style="color: #3776AB;"></i> Python</li>
+            </ul>
+        </div>
+
+        <!-- Quadrado 3: Bancos de Dados -->
+        <div class="skill-category">
+            <h3><i class="fas fa-database" style="color: #000000;"></i> Bancos de Dados</h3>
+            <ul class="no-bullets">
+                <li><i class="fas fa-database" style="color: #00758F;"></i> MySQL</li>
+                <li><i class="fas fa-database" style="color: #FF0000;"></i> Oracle</li>
+                <li><i class="fas fa-database" style="color: #13AA52;"></i> MongoDB</li>
+                <li><i class="fas fa-database" style="color: #052FAD;"></i> DB2</li>
+            </ul>
+        </div>
+    </div>
+        </section>
+
+        <!-- Seção "Projetos" -->
+        <section id="projetos" class="apple-section">
+            <h2><i class="fas fa-laptop-code"></i> Projetos</h2>
+            <div class="projects-grid">
+                <!-- Projeto 1: Bloco de Notas -->
+                <article class="apple-project">
+                    <h3>Calculadora IMC Feminino</h3>
+                    <div class="preview-container">
+                        <img src="assets/print-calculadora-imc.png" alt="Preview da Calculadora IMC" class="project-preview">
+                    </div>
+                    <p>Calculadora de Índice de Massa Corporal com design feminino</p>
+                    <a href="https://luanadiniz.github.io/calculadora-imc-feminino/" class="apple-btn">Ver Detalhes</a>
+                </article>
+                
+                <!-- Projeto 2: Cardápio Virtual -->
+                <article class="apple-project">
+                    <h3>Cardápio Confeitaria</h3>
+                    <img src="assets/print-confeitaria-doce-encanto.png" alt="Preview do Cardápio">
+                    <p>Cardápio digital para confeitaria com temas coloridos.</p>
+                    <a href="https://luanadiniz.github.io/cardapio-confeitaria/" class="apple-btn">Ver Detalhes</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Aside (Informações extras) -->
+        <aside class="apple-aside">
+            <h2><i class="fas fa-star"></i> Curiosidades</h2>
+            <div class="aside-content">
+                <div class="hobbies">
+                    <h3><i class="fas fa-heart"></i> Hobbies</h3>
+                    <ul>
+                        <li>Arte em cerâmica</li>
+                        <li>Ler livros</li>
+                        <li>Fotografia</li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h3><i class="fas fa-share-alt"></i> Redes Sociais</h3>
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Rodapé (footer) -->
+    <footer id="contato" class="apple-footer">
+        <div class="footer-content">
+            <h3><i class="fas fa-envelope"></i> Contato</h3>
+            <p>ldf.luanadinizfernandes@gmail.com</p>
+            <p class="copyright">© 2025 Luana Diniz Fernandes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
